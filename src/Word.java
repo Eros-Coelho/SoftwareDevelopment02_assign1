@@ -5,8 +5,14 @@ Student Number: 3151957
 
 public class Word {
 
+    private char[] letters;
+
+    public Word(char[] letters){
+        this.letters = letters;
+    }
+
     public boolean contains(char symbol){
-        return true;
+        return false;
     }
 
     public int length(){
@@ -14,6 +20,6 @@ public class Word {
     }
 
     public char[] getLetters(){
-        return
+        return null;
     }
 }
