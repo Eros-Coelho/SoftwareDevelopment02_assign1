@@ -11,16 +11,18 @@ public class WordTest {
     @Test
     void testContains(){
 
+//        checks if the array (word) contains the letters specified
         Word word = new Word(new char[] {'a', 'b', 'c', 'd'});
 
         assertTrue(word.contains('a'));
         assertTrue(word.contains('b'));
         assertTrue(word.contains('c'));
-        assertTrue(word.contains('d'));
+        assertTrue(word.contains('e')); //returns false as "e" is the only letter in here not present in the original array
     }
     @Test
     void testLength(){
 
+//        checks if the array is either 4, 1 or 0 in length
         Word word = new Word(new char[] {'a', 'b', 'c', 'd'});
         assertEquals(4, word.length());
 
@@ -36,6 +38,7 @@ public class WordTest {
 
         Word word = new Word(new char[] {'a', 'b', 'c', 'd'});
 
+//        makes sure it doesn't return null
         assertNotNull(word.getLetters());
     }
 }
