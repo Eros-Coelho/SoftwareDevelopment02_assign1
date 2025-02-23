@@ -17,7 +17,7 @@ public class WordTest {
         assertTrue(word.contains('a'));
         assertTrue(word.contains('b'));
         assertTrue(word.contains('c'));
-        assertTrue(word.contains('e')); //returns false as "e" is the only letter in here not present in the original array
+        assertFalse(word.contains('e')); //returns false as "e" is the only letter in here not present in the original array
     }
     @Test
     void testLength(){
